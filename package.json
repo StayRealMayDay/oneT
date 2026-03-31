@@ -1,0 +1,13 @@
+{
+  "name": "fullstack-monorepo",
+  "private": true,
+  "packageManager": "pnpm@10.15.0",
+  "scripts": {
+    "install:repo": "rush install",
+    "dev": "rush dev",
+    "dev:frontend": "cd apps/frontend && rushx dev",
+    "dev:backend": "cd apps/backend && rushx dev",
+    "build": "rush build",
+    "typecheck": "rush typecheck"
+  }
+}

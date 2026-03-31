@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/command-line.schema.json",
+  "commands": [
+    {
+      "commandKind": "bulk",
+      "name": "typecheck",
+      "summary": "Run TypeScript checks for projects",
+      "description": "Run the typecheck script for all selected Rush projects.",
+      "safeForSimultaneousRushProcesses": false,
+      "enableParallelism": true,
+      "ignoreDependencyOrder": false,
+      "ignoreMissingScript": false,
+      "allowWarningsInSuccessfulBuild": false,
+      "incremental": false
+    },
+    {
+      "commandKind": "global",
+      "name": "dev",
+      "summary": "Run frontend and backend dev servers",
+      "description": "Start the frontend and backend development servers together.",
+      "safeForSimultaneousRushProcesses": true,
+      "shellCommand": "node common/scripts/dev.js"
+    }
+  ],
+  "parameters": []
+}

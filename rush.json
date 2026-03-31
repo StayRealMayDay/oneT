@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.157.0",
+  "pnpmVersion": "10.15.0",
+  "nodeSupportedVersionRange": ">=22.0.0 <23.0.0",
+  "projectFolderMinDepth": 2,
+  "projectFolderMaxDepth": 2,
+  "repository": {
+    "defaultBranch": "main"
+  },
+  "eventHooks": {
+    "preRushInstall": [],
+    "postRushInstall": [],
+    "preRushBuild": [],
+    "postRushBuild": []
+  },
+  "projects": [
+    {
+      "packageName": "frontend",
+      "projectFolder": "apps/frontend"
+    },
+    {
+      "packageName": "backend",
+      "projectFolder": "apps/backend"
+    }
+  ]
+}

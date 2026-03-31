@@ -1,0 +1,7 @@
+node_modules
+dist
+.DS_Store
+.vite
+*.tsbuildinfo
+apps/backend/dev.db
+common/temp
