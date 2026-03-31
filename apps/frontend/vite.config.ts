@@ -5,7 +5,8 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? '/oneT/' : '/',
   plugins: [react()],
   resolve: {
     alias: {
@@ -17,4 +18,4 @@ export default defineConfig({
       '/api': 'http://localhost:8787',
     },
   },
-})
+}))

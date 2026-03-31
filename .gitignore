@@ -5,3 +5,4 @@ dist
 *.tsbuildinfo
 apps/backend/dev.db
 common/temp
+apps/*/.rush/temp/
